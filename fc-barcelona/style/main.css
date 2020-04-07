@@ -1,0 +1,514 @@
+/* Start Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+body {
+    /* overflow: hidden; */
+}
+
+.bg-color {
+    background: linear-gradient(90deg, rgba(0,77,152,1) 0%, rgba(165,0,68,1) 90%);
+}
+
+.color1 {
+    color: #EDBB00;
+}
+
+.color2 {
+    color: #A50044;
+}
+
+.color3 {
+    color: #fff;
+}
+
+.color4 {
+    color: #004D98;
+}
+
+.bx-shadow {
+    box-shadow: 0 0 5px #EDBB00, 0 0 15px #EDBB00, 0 0 30px #EDBB00;
+}
+
+.txt-shadow {
+    text-shadow: 0 0 5px #EDBB00, 0 0 15px #EDBB00, 0 0 30px #EDBB00;
+}
+
+.section-top {
+    background-color: #EDBB00;
+    color: #A50044;
+    padding: 15px 0;
+    text-align: center;
+    border-left: #004D98 25px solid;
+    border-right: #A50044 25px solid;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.section-top h1 {
+    display: inline-block;
+    padding: 10px 0;
+    font-weight: bold;
+    border-bottom: 3px solid #0A0927;
+    transition: all ease-in-out .3s;    
+}
+
+.section-top h1:hover {
+    color: #004D98;
+    text-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 60px #fff;
+}
+
+.overlay {
+    position: absolute;    
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.8);
+    z-index: 2;
+}
+/* End Global */
+
+
+/* Start Loading Page */
+#loading {
+    background: linear-gradient(90deg, rgba(0,77,152,1) 0%, rgba(165,0,68,1) 90%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+}
+
+#loading .container .live_loader {
+    position: relative;
+    width: 200px;
+    top: 200px;
+    margin: 25px auto 0;
+}
+
+#loading .container .live_loader img {
+    max-width: 100%;
+}
+/* End Loding Page */
+
+
+
+
+/* Start NavBar */
+header nav {
+    transition: ease-in-out .5s;
+}
+
+header nav.navbar {
+    padding: 0;
+}
+
+header nav .logo {
+    width: 100px;
+    height: 80px;
+    background-color: #A50044;
+    background-image: url(../img/gifs/logo.gif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+header nav ul li:first-child {
+    margin-left: 0;
+}
+
+header nav ul li a {
+    color: #EDBB00 !important;
+    font-size: 20px;
+    transition: ease-in-out .5s;
+    border-radius: 5px;
+    padding: 5px 15px !important;
+}
+
+header nav ul li a:hover {
+    color: #fff !important;
+    text-shadow: 0 0 5px #EDBB00, 0 0 15px #EDBB00, 0 0 30px #EDBB00;
+    box-shadow: 0 0 5px #EDBB00, 0 0 15px #EDBB00, 0 0 30px #EDBB00;
+}
+
+.navbar-nav .active>.nav-link {
+    color: #A50044 !important;
+    background: #EDBB00;
+    border-radius: 10px;
+    box-shadow: none !important;
+}
+
+.navbar-nav .active>.nav-link:hover {
+    color: #fff !important;
+    text-shadow: 0 0 5px #A50044, 0 0 15px #A50044, 0 0 30px #A50044 !important;
+}
+
+.navbar-nav .active>.nav-link.hvr-underline-from-center:before {
+    background-color: #A50044;
+}
+/* End NavBar */
+
+
+
+/* Start BackGround Video */
+#video {
+    position: relative;
+    line-height: 0;
+}
+
+#video .overlay {
+    background-color: rgba(0,0,0,.5);
+}
+
+#video .text-cont {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#video .text-cont h1 {
+    top: 20%;
+    font-size: 150px;
+    z-index: 999;
+}
+
+#video .text-cont p {
+    top: 50%;
+    font-size: 100px;
+    z-index: 999;
+}
+/* End BackGround Video */
+
+
+
+/* Start Squad Section */
+#squad {
+    padding: 0 0 8%;
+}
+
+#squad-carousel .carousel-inner {
+    background-image: url(../img/background-images/squad.jpg);
+    border-radius: 50px;
+    margin-top: 100px;
+}
+
+#squad-carousel .carousel-inner .carousel-item img {
+    max-width: 30%;
+    margin: 80px auto 0;
+}
+
+#squad-carousel .carousel-inner .carousel-item p {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 0;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#squad-carousel .carousel-inner .carousel-item p span {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    background-color: #EDBB00;
+    width: 80px;
+    height: 80px;
+    top: 200px;
+    font-size: 40px;
+    line-height: .5;
+    opacity: .7;
+    border-radius: 40px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-image: none;
+    color: #A50044;
+}
+
+.carousel-control-prev-icon {
+    color: #004D98;
+}
+/* End Squad Section */
+
+
+
+/* Start Honours Section */
+#honours .section-top {
+    border-radius: 0;
+}
+
+#honours .overlay-parent {
+    background-image: url(../img/background-images/honours.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    padding: 50px 0;
+}
+
+#honours .overlay-parent .card {
+    border: 0;
+    margin: 50px 0;
+    background-color: unset;
+    position: relative;
+    z-index: 999;
+}
+
+#honours .overlay-parent .card .pic {
+    padding: 50px 70px 0px
+}
+
+#honours .card .pic img {
+    height: 200px;
+}
+
+#honours .card .card-body h3 {
+    padding: 10px 0;
+    font-size: 33px;
+    border-radius: 10px;
+}
+
+#honours .card .card-body span {
+    font-size: 50px;
+}
+/* End Honours Section */
+
+
+
+/* Start Legends Section */
+#legends .container {
+    margin: 150px auto 0;
+}
+
+#legends .item {
+    perspective: 1000px;
+    height: 600px;
+}
+
+#legends .item .fliip {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+}
+
+#legends .item:hover .fliip {
+    transform: rotateY(180deg);
+}
+
+#legends .item .fliip .front {
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+#legends .item .fliip .back {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+#legends .item .fliip .front,
+#legends .item .fliip .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#legends .item .fliip .front h3 {
+    text-align: center;
+    font-size: 33px;
+    border-radius: 15px;
+    padding: 10px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#legends .item .fliip .front .pic {
+    display: flex;
+    justify-content: center;
+}
+
+#legends .item .fliip .front .pic img {
+    max-width: 100%;
+    height: 340px;
+}
+
+#legends .item .fliip .back .bc-contnt {
+    z-index: 1;
+    height: 340px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#legends .item .fliip .back .bc-contnt h4 {
+    margin: 20px 0;
+    font-size: 35px;
+}
+/* End Legends Section */
+
+
+
+/* Start Stadium Section */
+#stadium .section-top {
+    border-radius: 0;
+}
+
+#stadium .pic {
+    background-image: url(../img/background-images/stadium.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#stadium .pic .content {
+    padding: 15% 0 20%;
+    position: relative;
+    z-index: 999;
+}
+
+#stadium .pic .content h2 {
+    font-size: 170px;
+    padding: 10px 25px;
+    border-radius: 35px;
+    margin-bottom: 200px;
+}
+
+#stadium .pic .content h2:hover {
+    background: linear-gradient(90deg, rgba(0,77,152,.2) 0%, rgba(165,0,68,.2) 90%);
+    box-shadow: 0 0 5px #EDBB00, 0 0 10px #EDBB00, 0 0 15px #EDBB00;
+}
+
+#stadium .pic .content article {
+    font-size: 25px;
+    margin-bottom: 80px;
+    color: gray;
+}
+
+#stadium .pic .content p {
+    font-size: 80px;
+    margin: 80px 0;
+}
+
+.border-bottom {
+    border-bottom: 2px solid #004D98!important;
+}
+/* End Stadium Section */
+
+
+
+/* Start Partners Section */
+#partners {
+    background-color: #80b7cf;
+}
+
+#partners .section-top {
+    border-radius: 0;
+}
+
+#partners .container {
+    padding: 100px 0;
+}
+
+
+
+#partners .item {
+    transition: all ease-in-out .5s;
+    padding: 10px;
+    margin: 30px;
+    display: inline-block;
+}
+
+#partners .item:hover {
+    background-color: rgba(237,187,0,.7);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#partners .item.hvr-underline-from-right:before,
+#partners .item.hvr-underline-from-left:before,
+#partners .item.hvr-underline-from-center:before {
+    background: #A50044;
+}
+
+#partners .item img {
+    width: 225px;
+    height: 150px;
+}
+/* End Partners Section */
+
+
+
+/* Start Footer */
+footer .cont p {
+    font-size:  22px;
+    padding: 3px 0;
+    margin: 0;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+}
+
+footer .cont p a {
+    transition: ease-in-out .5s;
+}
+
+footer .cont p a:hover {
+    text-decoration: none;
+}
+
+footer .cont p span:first-of-type {
+    font-size: 50px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+footer .cont p span:last-of-type {
+    font-size: 50px;
+}
+/* End Footer */
+
+
+
+/* Strat Scroll-Top Button */
+#scroll-top {
+    display: none;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transition: all ease-in-out .5s;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+#scroll-top:hover {
+    background-color: #EDBB00;
+    width: 75px;
+    height: 75px;
+}
+
+#scroll-top img {
+    max-width: 100%;
+}
+/* End Scroll-Top Button */
