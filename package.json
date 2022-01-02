@@ -1,5 +1,5 @@
 {
-  "name": "new-folder",
+  "name": "fc-barcelona",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,9 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "homepage": "https://Mhsmustafa84.githup.io/FC-Barcelona",
+  "homepage": "https://mhsmustafa84.githup.io/FC-Barcelona",
   "license": "ISC",
   "dependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^3.2.3"
   }
 }
