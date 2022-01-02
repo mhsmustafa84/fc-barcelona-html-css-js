@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d fc-barcelona"
+    "deploy": "gh-pages -d src"
   },
   "keywords": [],
   "author": "",
